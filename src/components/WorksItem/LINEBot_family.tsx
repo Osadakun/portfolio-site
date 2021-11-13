@@ -1,12 +1,11 @@
 import React, { useCallback, useEffect, useState, VFC } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Center, Heading, Stack, Wrap, WrapItem, Text } from '@chakra-ui/layout';
-import { useDisclosure } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/button';
+import family from '../../img/family.png';
 
 export const LINEBot_family: VFC = () => {
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
-    const { isOpen, onOpen, onClose } = useDisclosure();
     const history = useHistory();
 
     const onClickPortfolio = useCallback(() => {
@@ -17,7 +16,7 @@ export const LINEBot_family: VFC = () => {
       setTimeout(() => {
         setIsLoaded(true);
       }, 100);
-    }, ['画像をインポートしてここに入れる']);
+    }, [family]);
 
     return (
         <WrapItem

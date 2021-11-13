@@ -1,13 +1,11 @@
 import React, { useCallback, useEffect, useState, VFC } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Center, Heading, Stack, Wrap, WrapItem, Text } from '@chakra-ui/layout';
-import { useDisclosure } from '@chakra-ui/react';
-import portfolioImage from '../../img/portfolio.png';
+import trashbox from '../../img/trashbox.png';
 import { Button } from '@chakra-ui/button';
 
 export const Autotrashbox: VFC = () => {
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
-    const { isOpen, onOpen, onClose } = useDisclosure();
     const history = useHistory();
 
     const onClickPortfolio = useCallback(() => {
@@ -18,11 +16,10 @@ export const Autotrashbox: VFC = () => {
       setTimeout(() => {
         setIsLoaded(true);
       }, 100);
-    }, ['画像をインポートしてここに入れる']);
+    }, [trashbox]);
 
     return (
         <WrapItem
-            // w='md'
             h='sm'
             borderRadius='10px'
             shadow='md'
