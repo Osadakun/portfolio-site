@@ -16,7 +16,7 @@ type Props = {
   onClose: () => void;
 };
 
-export const WorksModal: VFC<Props> = (props) => {
+export const Modal_Bad: VFC<Props> = (props) => {
   const { onClose, isOpen } = props;
 
   return (
