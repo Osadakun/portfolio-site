@@ -4,7 +4,7 @@ import { Center, Heading, Stack, Wrap, WrapItem, Text } from '@chakra-ui/layout'
 import { useDisclosure } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/button';
 
-export const LINEBot_Bad: VFC = () => {
+export const Autotrashbox: VFC = () => {
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
     const { isOpen, onOpen, onClose } = useDisclosure();
     const history = useHistory();

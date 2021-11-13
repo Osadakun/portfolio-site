@@ -39,52 +39,12 @@ export const Works: VFC = () => {
               <Box borderWidth='1px' bg='white' onClick={onClickPortfolio} _hover={{ cursor: 'pointer' }}>
                 <Img src={portfolioImage} w='md' alt='portfolio_image' m='auto' />
               </Box>
-              <Heading as='h2'>Portfolio</Heading>
+              <Heading as='h2'>test</Heading>
               <Button colorScheme='teal' size='sm' onClick={onOpen} onClose={onClose}>
                 詳細
               </Button>
             </Stack>
           </WrapItem>
-          {/* <WrapItem
-            // w='md'
-            h='sm'
-            borderRadius='10px'
-            shadow='md'
-            p={4}
-            bgColor='white'
-            justify='center'
-            w={{ base: '100%', xs: '85%' }}
-          >
-            <Stack textAlign='center' spacing={4}>
-              <Center borderWidth='1px' bg='white' h='235px'>
-                <Text fontSize='2xl'>Coming soon</Text>
-              </Center>
-              <Heading as='h2' w='md'>Coming soon...</Heading>
-              <Button colorScheme='teal' size='sm' _hover={{ cursor: 'default' }}>
-                詳細
-              </Button>
-            </Stack>
-          </WrapItem>
-          <WrapItem
-            // w='md'
-            h='sm'
-            borderRadius='10px'
-            shadow='md'
-            p={4}
-            bgColor='white'
-            justify='center'
-            w={{ base: '100%', xs: '85%' }}
-          >
-            <Stack textAlign='center' spacing={4} >
-              <Center borderWidth='1px' bg='white' h='235px'>
-                <Text fontSize='2xl'>Coming soon</Text>
-              </Center>
-              <Heading as='h2' w='md'>Coming soon...</Heading>
-              <Button colorScheme='teal' size='sm' _hover={{ cursor: 'default' }}>
-                詳細
-              </Button>
-            </Stack>
-          </WrapItem> */}
         </Wrap>
       </Box>
 
