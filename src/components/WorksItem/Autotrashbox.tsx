@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState, VFC } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Center, Heading, Stack, Wrap, WrapItem, Text } from '@chakra-ui/layout';
 import { useDisclosure } from '@chakra-ui/react';
+import portfolioImage from '../../img/portfolio.png';
 import { Button } from '@chakra-ui/button';
 
 export const Autotrashbox: VFC = () => {
