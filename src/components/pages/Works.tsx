@@ -47,7 +47,31 @@ export const Works: VFC = () => {
           </WrapItem>
         </Wrap>
       </Box>
+      <Box bgColor='#EEEEF0' pt='15%' style={{ height: '100vh' }}>
+        <Wrap justify='center' alignItems='center' w='100%' p={4}>
+          <WrapItem
+            // w='md'
+            h='auto'
+            borderRadius='10px'
+            shadow='md'
+            p={4}
+            bgColor='white'
+            w={{ base: '100%', xs: '85%' }}
+          >
+            <Stack textAlign='center' spacing={4}>
+              <Box borderWidth='1px' bg='white' onClick={onClickPortfolio} _hover={{ cursor: 'pointer' }}>
+                <Img src={portfolioImage} w='md' alt='portfolio_image' m='auto' />
+              </Box>
+              <Heading as='h2'>test</Heading>
+              <Button colorScheme='teal' size='sm' onClick={onOpen} onClose={onClose}>
+                詳細
+              </Button>
+            </Stack>
+          </WrapItem>
+        </Wrap>
+      </Box>
 
+      <WorksModal onClose={onClose} isOpen={isOpen} />
       <WorksModal onClose={onClose} isOpen={isOpen} />
     </div>
   );
