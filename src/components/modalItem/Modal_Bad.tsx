@@ -32,11 +32,7 @@ export const Modal_Bad: VFC<Props> = (props) => {
           <Heading fontSize='md'>使用言語・技術等</Heading>
           <UnorderedList>
             <HStack>
-              <ListItem>Python</ListItem>
-              <ListItem>Heroku</ListItem>
-              <ListItem>LINEMessagingAPI</ListItem>
-              <ListItem>Webhook</ListItem>
-              <ListItem>GoogleSpreadSheet</ListItem>
+              <ListItem>Python,Heroku,LINEMessagingAPI,Webhook,GoogleSpreadSheet</ListItem>
             </HStack>
           </UnorderedList>
         </ModalBody>
