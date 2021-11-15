@@ -16,7 +16,7 @@ export const Works: VFC = () => {
   return (
     <div>
       <Modal_Bad onClose={onClose} isOpen={isOpen}/>
-      <WorksModal onClose={onClose} isOpen={isOpen} />
+      {/* <WorksModal onClose={onClose} isOpen={isOpen} /> */}
     </div>
   );
 };
