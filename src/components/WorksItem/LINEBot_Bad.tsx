@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { Center, Heading, Stack, Wrap, WrapItem, Text } from '@chakra-ui/layout';
 import { Button } from '@chakra-ui/button';
 import bad from '../../img/bad.png';
+import { Modal_Bad } from '../modalItem/Modal_Bad';
 
 export const LINEBot_Bad: VFC = () => {
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
@@ -19,6 +20,7 @@ export const LINEBot_Bad: VFC = () => {
     }, [bad]);
 
     return (
+      <div>
         <WrapItem
             // w='md'
             h='sm'
@@ -39,5 +41,7 @@ export const LINEBot_Bad: VFC = () => {
               </Button>
             </Stack>
           </WrapItem>
+      {/* <Modal_Bad onClose={Modal_Bad.onClose} isOpen={isOpen} /> */}
+      </div>
     );
 };
