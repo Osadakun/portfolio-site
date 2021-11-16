@@ -82,7 +82,7 @@ export const Works: VFC = () => {
         </WrapItem> */}
       </Wrap>
     </Box>
-    <Modal_Bad onClose={onClose} isOpen={isOpen} />
+    {/* <Modal_Bad onClose={onClose} isOpen={isOpen} /> */}
     <WorksModal onClose={onClose} isOpen={isOpen} />
   </div>
 );
