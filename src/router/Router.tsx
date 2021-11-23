@@ -24,7 +24,6 @@ export const Router: VFC = () => {
         <Route path='/works'>
           <HeaderLayout>
             <Works />
-            {/* <workstest /> */}
           </HeaderLayout>
         </Route>
         <Route path='*'>
